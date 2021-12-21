@@ -21,17 +21,24 @@ h4{
 }
 body{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: .9rem
 }
+
+/* header section */
 header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    border: 1px solid red;
     color: #fff;
+    background-color: #FF9063;
+    font-size: .9rem;
+    z-index: 1;
 }
-
+header a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: .15em;
+}
 .web-header{
     padding:0 8em;
     height: 100px;
@@ -49,6 +56,22 @@ header .logo{
     list-style: none;
     margin : 0 1em;
 }
+.web-header li:hover{
+   text-decoration: underline;
+}
+.hide-on-mobile>i{
+    display: none;
+}
+.fa-bars{
+    display: none;
+}
+.call-to-action{
+    border: 1px solid #fff;
+    padding: 1em 2em;
+    border-radius: 30px;
+}
+
+/* Main showcase section */
 #show-case{
     padding-top: 100px;
     background-color: #FF9063;
@@ -57,7 +80,6 @@ header .logo{
     color: #fff
 }
 #show-case .intro{
-    border: 1px solid red;
     height: 70%;
     display: flex;
     align-items: center;
@@ -80,4 +102,404 @@ header .logo{
 .my-info p{
     font-weight: 400;
     font-size: 4.1em;
+}
+.contact-details{
+    height: 30%;
+}
+.contact-details .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#about-me{
+    padding: 9em 0;
+}
+#about-me h3{
+    margin-bottom: .2em;
+}
+.about-me-descript{
+    display: flex;
+    justify-content: space-between;
+}
+.about-me-descript>div{
+    width: 47%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+/* Academic Section */
+#academic{
+    padding: 1em 0 7em;
+}
+#academic h3{
+    margin-bottom: .5em;
+}
+.education-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.institute{
+    position: relative;
+    margin-left:3em;
+    margin-bottom: 2em;
+}
+.institute>h5{
+    font-size: 1.5em;
+    margin:.1em 0;
+}
+.institute>h5>span{
+    font-size: 1.2em;
+}
+.institute p{
+    font-style: italic;
+    font-size: .9em;
+}
+.fa-graduation-cap{
+    position: absolute;
+    margin-left: -3em;
+    color: #fff;
+    background-color: #566A74;
+    font-size: 1.1em;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: .3em;
+}
+.edu-right img{
+    width: 300px;
+}
+
+/* skills section */
+#skills{
+    background-color: #F8F8F8;
+    padding: 9em 0;
+}
+#skills h3{
+    margin-bottom: .9em;
+}
+.skills-cont{
+    margin-bottom: 1.2em;
+}
+.skills-cont h5{
+    margin-bottom: .4em;
+}
+.progress{
+    color:#fff;
+    width: 100%;
+    height: 18px;
+    background-color: #566A74;
+    border-radius: 10px;
+
+}
+.progress-bar{
+    opacity: 0;
+    width: 0%;
+    background-color: #FF9063;
+    border-radius: 10px;
+    position: relative;
+    height: 100%;
+    transition: all .5s;
+}
+.progress-bar span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* Portfolio */
+#work{
+    padding: 9em 0;
+}
+.work-descript{
+    margin: .8em 0 1em;
+    font-size: 1.3em;
+}
+.work-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.individual-gird{
+    flex: 0 0 32%;
+    margin-bottom: 5em;
+
+}
+.individual-gird img{
+    width: 100%;
+}
+.ind-cont{
+    padding:1em 1.5em;
+    height: 170px;
+    background-color: #F8F8F8;
+    position: relative;
+    transition: all .3s;
+}
+.ind-cont h5{
+    font-size: 1.2em;
+}
+.ind-cont a{
+    text-decoration: none;
+    margin: .2em 0;
+}
+.ind-cont:hover{
+    background-color: #FF9063;
+    color: #fff;
+}
+footer{
+    padding: 9em 0;
+    background-color: black;
+    color: #fff;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h3{
+    color: #FF9063;
+    font-weight: 700;
+}
+.footer-left{
+    padding-right: 5em;
+}
+.footer-left>p{
+    font-size: 1.1em;
+    margin: .9em 0;
+    font-weight: 200;
+}
+.socials>a{
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: .7em;
+    color: #FF9063;
+    background-color: #26140C;
+    padding: .3em .5em;
+    border-radius: 10px;
+}
+.footer-right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-right a{
+    display: block;
+    color: #fff;
+    padding: .7em 2em;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+}
+.cv{
+    margin-right: 2em;
+    border: 1px solid #fff;
+}
+.contact{
+    background-color: #FF9063;
+}
+/* media queries */
+@media screen and (max-width: 1080px) {
+    body{
+        font-size: .9em;
+    }
+    .web-header{
+        padding: 0 4em;
+    }
+}
+@media screen and (max-width: 868px) {
+    .container{
+        width: 80%;
+    }
+    h1{
+        font-size: 2.4em;
+    }
+    h2{
+        font-size: 3.3em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    h4{
+        font-size: 1.8em;
+    }
+    body{
+        font-size: .9em;
+    }
+    header a{
+        color: black;
+    }
+    .web-header nav ul{
+        display: block;
+    }
+    .web-header{
+        position: relative;
+        text-align: center;
+        height: 70px;
+    }
+    header .logo{
+        width: 100%;  
+    }
+    .fa-bars{
+        font-size: 1.5em;
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+
+    }
+    .call-to-action{
+        display: none;
+    }
+    .hide-on-mobile{
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 60%;
+        text-align: center;
+        padding: 4em 0;
+        display: none;
+    }
+    .hide-on-mobile li{
+        margin: 1em;
+        
+    }
+    .hide-on-mobile>i{
+        background-color: #fff;
+        padding: .5em .7em;
+        border-radius: 30px;
+        font-size: 1.5em;
+        display: block;
+        position: absolute;
+        top: 1em;
+        left:-2.6em;
+        color: black;
+    }
+    .my-info h2{
+        font-size: 2.7em;
+    }
+    .my-info p{
+        font-size: 2.9em;
+    }
+    #show-case .intro{
+        height: 60%;
+    }
+    .individual-gird{
+        flex: 0 0 48%;
+        width: 33%;
+        margin-bottom: 5em;
+    
+    }
+    
+}
+@media screen and (max-width: 668px) {
+    .container{
+        width: 92%;
+    }
+    h1{
+        font-size: 2.1em;
+    }
+    h2{
+        font-size: 2.8em;
+    }
+    h3{
+        font-size: 1.6em;
+    }
+    h4{
+        font-size: 1.4em;
+    }
+    body{
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    .my-info h2{
+        font-size: 2.7em;
+    }
+    .my-info p{
+        font-size: 2.9em;
+    }
+    #show-case{
+        height: auto;
+        padding: 90px 0 3em;
+    }
+    .intro>.container{
+        display: block;
+        text-align: center;
+    }
+    .intro img{
+        margin-right:0px ;
+        margin-bottom: 2em;
+    }
+    .my-info{
+        margin-bottom: 2em;
+    }
+    #about-me{
+        padding: 3em 0;
+    }
+    #about-me h3{
+        margin-bottom: 1em;
+    }
+    .about-me-descript{
+        display: block;
+    }
+    .about-me-descript>div{
+        width: 100%;
+    }
+    #academic{
+        padding: 1em 0 3em;
+    }
+    #academic h3{
+        margin-bottom: 1em;
+    }
+    .institute>h5{
+        font-size: 1.3em;
+    }
+    .edu-right img{
+        display: none;
+    }
+    #skills, #work, footer{
+        padding: 3em 0;
+    }
+    .individual-gird{
+        margin-bottom: 2em;
+    }
+
+    footer .container{
+        display: block;
+    }
+    .footer-left{
+        padding-right: 0em;
+    }
+    .footer-right{
+        width: 100%;
+        margin-top: 2em;
+    }
+}
+@media screen and (max-width: 520px) {
+    .container{
+        width: 94%;
+    }
+    .contact-details{
+        margin: 2em ;
+    }
+    .contact-linkedin{
+        display: none;
+    }
+    .work-container{
+        display: block;
+    }
+    .individual-gird{
+        width: 100%;    
+    }
+    .ind-cont{
+        height: 130px;
+    }
 }
